@@ -51,7 +51,7 @@ promoRouter
 
   .post((req, res, next) => {
     res.statusCode = 403;
-    res.end("post operation not supported on promotions/:promotionId");
+    res.end("post operation not supported on promotions/:promoId");
   })
 
   .put((req, res, next) => {

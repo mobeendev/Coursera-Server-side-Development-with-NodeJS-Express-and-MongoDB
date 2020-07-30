@@ -1,57 +1,63 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
-const dishRouter = express.Router();
+const leaderRouter = express.Router();
 
-dishRouter.use(bodyParser.json());
+leaderRouter.use(bodyParser.json());
 
-dishRouter
+leaderRouter
   .route("/")
   .all((req, res, next) => {
     res.statusCode = 200;
-    res.setHeader("Content-Type", "text/plain");
+    res.setHeader("Content-Type", "Text/Plain");
     next();
   })
+
   .get((req, res, next) => {
-    res.end("Will send all the dishes to you!");
+    res.end("Will send all the leaders to you!");
   })
+
   .post((req, res, next) => {
     res.end(
-      "Will add the dish: " +
+      "Will add the leader: " +
         req.body.name +
         " with details: " +
         req.body.description
     );
   })
+
   .put((req, res, next) => {
     res.statusCode = 403;
-    res.end("PUT operation not supported on /dishes");
+    res.end("PUT operation not supported on /leaders");
   })
+
   .delete((req, res, next) => {
-    res.end("Deleting all dishes");
+    res.end("Deleting all leaders");
   });
 
-dishRouter
-  .route("/:dishId")
+leaderRouter
+  .route("/:leaderId")
   .all((req, res, next) => {
     res.statusCode = 200;
-    res.setHeader("Content-Type", "text/plain");
+    res.setHeader("Content-Type", "Text/Plain");
     next();
   })
 
   .get((req, res, next) => {
-    res.end("Will send all the dish: " + req.params.dishId + " to u!");
+    res.end(
+      "Will send details of the leader: " + req.params.leaderId + " to you!"
+    );
   })
 
   .post((req, res, next) => {
     res.statusCode = 403;
-    res.end("post operation not supported on dishes/:dishId");
+    res.end("post operation not supported on leaders/:leaderId");
   })
 
   .put((req, res, next) => {
-    res.write("Updating the dish: " + req.params.dishId + "\n");
+    res.write("Updating the leader: " + req.params.leaderId + "\n");
     res.end(
-      "Will update the dish: " +
+      "Will update the leader: " +
         req.body.name +
         " with details: " +
         req.body.description
@@ -59,6 +65,7 @@ dishRouter
   })
 
   .delete((req, res, next) => {
-    res.end("Deleting dish: " + req.params.dishId);
+    res.end("Deleting leader: " + req.params.leaderId);
   });
-module.exports = dishRouter;
+
+module.exports = leaderRouter;

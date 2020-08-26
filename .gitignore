@@ -2,3 +2,6 @@
 week4/exercises/https/bin/private.key
 week4/exercises/https/bin/cert.csr
 week4/exercises/https/bin/certificate.pem
+week4/exercises/cors/bin/private.key
+week4/exercises/cors/bin/cert.csr
+week4/exercises/cors/bin/certificate.pem

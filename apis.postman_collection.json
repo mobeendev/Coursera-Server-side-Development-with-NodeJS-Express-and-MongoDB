@@ -1,0 +1,781 @@
+{
+	"info": {
+		"_postman_id": "82f4ec6e-fd39-496b-b703-091891173811",
+		"name": "Coursera Node",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/dishes/123",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"abdul\",\n    \"description\":\"some description\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/promotions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"promotions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "http://localhost:123/dishes/",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/dishes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dishes/5f4012a0c5684b06f4cae5ec",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5f4012a0c5684b06f4cae5ec"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTgwOTQyOTAsImV4cCI6MTU5ODA5Nzg5MH0.GRadNwvJ2ZGsrD_YqIgxdfmb9YjmjZoiD6bLI1m5hfs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"name\": \"some di33shW2\",\n      \"image\": \"images/zucchipakoda.png\",\n      \"category\": \"appetizer\",\n      \"label\": \"\",\n      \"price\": \"1.99\",\n      \"featured\": \"false\",\n      \"description\": \"Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce\",\n      \"comments\": []\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dishes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/5f2960c06a1a3d09298ad215",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwZmNkZWU3ZjA3NTA3Mzg4ZTQ1ODUiLCJpYXQiOjE1OTgwOTU0MDgsImV4cCI6MTU5ODA5OTAwOH0.9tQDc8xWF874y7ZfcK6oxJTbJsX5AuuBEDHEY-wlykc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n     \n      \"label\": \"Another thing\",\n      \"comments\": [\n        {\n          \"rating\": 5,\n          \"comment\": \"Imagine all the eatables, living in conFusion!\",\n          \"author\": \"John Lemon\",\n          \"date\": \"2012-10-16T17:57:28.556094Z\"\n        }, {\n          \"rating\": 5,\n          \"comment\": \"Imagine all the eatables, living in conFusion!\",\n          \"author\": \"John Lemon\",\n          \"date\": \"2012-10-16T17:57:28.556094Z\"\n        }, {\n          \"rating\": 5,\n          \"comment\": \"Imagine all the eatables, living in conFusion!\",\n          \"author\": \"John Lemon\",\n          \"date\": \"2012-10-16T17:57:28.556094Z\"\n        }\n      ]\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dishes/5f401410c5684b06f4cae5ef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5f401410c5684b06f4cae5ef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/5f2960736a1a3d09298ad20f/comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dishes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/5f2960736a1a3d09298ad20f/comments/5f29a16ad5887d0bae31ba56",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dishes/5f2960736a1a3d09298ad20f/comments/5f29a16ad5887d0bae31ba56",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5f2960736a1a3d09298ad20f",
+						"comments",
+						"5f29a16ad5887d0bae31ba56"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/5f2960736a1a3d09298ad20f/comments/5f29a289d5887d0bae31ba61",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"rating\": 3,\n        \"comment\": \", Abdul comment!\",\n        \"author\": \"Abdul Mobeen\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dishes/5f2960736a1a3d09298ad20f/comments/5f29a371d5887d0bae31ba65",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5f2960736a1a3d09298ad20f",
+						"comments",
+						"5f29a371d5887d0bae31ba65"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/5f2960736a1a3d09298ad20f/comments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"rating\": 4,\n        \"comment\": \"Ultimate, Reaching for the stars!\",\n        \"author\": \"Ringo Starry\",\n        \"createdAt\": \"2020-08-04T13:19:47.573Z\",\n        \"updatedAt\": \"2020-08-04T13:19:47.573Z\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dishes/5f2960736a1a3d09298ad20f/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5f2960736a1a3d09298ad20f",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/promotions/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/promotions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"promotions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/promotions/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwZmNkZWU3ZjA3NTA3Mzg4ZTQ1ODUiLCJpYXQiOjE1OTgwOTU0MDgsImV4cCI6MTU5ODA5OTAwOH0.9tQDc8xWF874y7ZfcK6oxJTbJsX5AuuBEDHEY-wlykc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n      \"name\": \"Weekend Grand Buffet\",\n      \"image\": \"images/buffet.png\",\n      \"label\": \"laptop\",\n      \"price\": \"19.99\",\n      \"description\": \"Featuring . . .\",\n      \"featured\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/promotions/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"promotions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/promotions/5f2bf842f8a1bf2613c991f1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Abdul Mobeen\",\n    \"label\": \"New Cars\",\n    \"price\": 2000\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/promotions/5f2bf842f8a1bf2613c991f1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"promotions",
+						"5f2bf842f8a1bf2613c991f1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/promotions/5f2bf84ff8a1bf2613c991f2",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/promotions/5f2bf84ff8a1bf2613c991f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"promotions",
+						"5f2bf84ff8a1bf2613c991f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/leaders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTgwOTQyOTAsImV4cCI6MTU5ODA5Nzg5MH0.GRadNwvJ2ZGsrD_YqIgxdfmb9YjmjZoiD6bLI1m5hfs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/leaders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"leaders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"username\": \"admin\",\n      \"password\": \"admin\",\n      \"firstname\": \"jhon\",\n      \"lastname\": \"doe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Origin",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n      \"username\": \"user\",\n      \"password\": \"user\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/users/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/5f401437c5684b06f4cae5f1/comments/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTgwMzQ0MzcsImV4cCI6MTU5ODAzODAzN30.3sTJZuRwbydvdHFiHBtvjWMYruC4YhWwcoqArVVB3tA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"rating\": 4,\n        \"comment\": \"2nd comment on dish 2!\",\n        \"createdAt\": \"2020-08-04T13:19:47.573Z\",\n        \"updatedAt\": \"2020-08-04T13:19:47.573Z\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dishes/5f401437c5684b06f4cae5f1/comments/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5f401437c5684b06f4cae5f1",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/users/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTgwOTQyOTAsImV4cCI6MTU5ODA5Nzg5MH0.GRadNwvJ2ZGsrD_YqIgxdfmb9YjmjZoiD6bLI1m5hfs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/5f401410c5684b06f4cae5ef",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTgwOTQyOTAsImV4cCI6MTU5ODA5Nzg5MH0.GRadNwvJ2ZGsrD_YqIgxdfmb9YjmjZoiD6bLI1m5hfs",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/dishes/5f401410c5684b06f4cae5ef",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5f401410c5684b06f4cae5ef"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/dishes/5f401437c5684b06f4cae5f1/comments/5f40144bc5684b06f4cae5f2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTgwOTg5NTcsImV4cCI6MTU5ODEwMjU1N30.qWQmkuJQPo-NDf2B8VZYSe6XMO3TQHcebKyIlJQ_UI0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"rating\": 3,\n        \"comment\": \", Abdul comment!\",\n        \"author\": \"Abdul Mobeen\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/dishes/5f401437c5684b06f4cae5f1/comments/5f40144bc5684b06f4cae5f2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"dishes",
+						"5f401437c5684b06f4cae5f1",
+						"comments",
+						"5f40144bc5684b06f4cae5f2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/favorites/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTg2MzQyMzYsImV4cCI6MTU5ODYzNzgzNn0.1fd37FjKtVww4h5oE5JUnReJig-oVPkEPRVzYm52jeY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/favorites/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"favorites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/favorites/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTg2MzQyMzYsImV4cCI6MTU5ODYzNzgzNn0.1fd37FjKtVww4h5oE5JUnReJig-oVPkEPRVzYm52jeY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"_id\": \"5f401437c5684b06f4cae5f1\"\n    },\n     {\n        \"_id\": \"5f410184e7f07507388e4587\"\n    },\n     {\n        \"_id\": \"5f4101d9e7f07507388e458b\"\n    }\n    \n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/favorites/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"favorites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/favorites/",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTg2MzQyMzYsImV4cCI6MTU5ODYzNzgzNn0.1fd37FjKtVww4h5oE5JUnReJig-oVPkEPRVzYm52jeY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/favorites/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"favorites",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/favorites/5f493c7b0bcff20e48c1a391",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTg2MzQyMzYsImV4cCI6MTU5ODYzNzgzNn0.1fd37FjKtVww4h5oE5JUnReJig-oVPkEPRVzYm52jeY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "dishId",
+							"value": "5f4670a6b2e4ae15b03639ad",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/favorites/5f493c7b0bcff20e48c1a391",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"favorites",
+						"5f493c7b0bcff20e48c1a391"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/favorites/5f493c7b0bcff20e48c1a391",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZjQwMTFjOGM1Njg0YjA2ZjRjYWU1ZTgiLCJpYXQiOjE1OTg2MzQyMzYsImV4cCI6MTU5ODYzNzgzNn0.1fd37FjKtVww4h5oE5JUnReJig-oVPkEPRVzYm52jeY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/favorites/5f493c7b0bcff20e48c1a391",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"favorites",
+						"5f493c7b0bcff20e48c1a391"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
